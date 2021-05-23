@@ -50,6 +50,8 @@ class MainActivity : AppCompatActivity() {
                 val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
                 tvSelectedDateInMinutes.setText(differenceInMinutes.toString())
 
+                // To get age in minutes, simply divide the date in minutes by another (24*60)
+
         }, year, month, day)
 
         dpd.datePicker.setMaxDate(Date().time-86400000)
